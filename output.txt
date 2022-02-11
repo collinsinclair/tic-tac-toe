@@ -1,0 +1,114 @@
+(base) brian@res1-144-230-dhcp tic-tac-toe % ./main
+    |   |  
+ ---+---+---
+    |   |  
+ ---+---+---
+    |   |  
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+S
+    |   |  
+ ---+---+---
+    | X |  
+ ---+---+---
+    |   |  
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+C
+    |   |  
+ ---+---+---
+    | X |  
+ ---+---+---
+    |   | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+A
+    |   |  
+ ---+---+---
+  X | X |  
+ ---+---+---
+    |   | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+D
+    |   |  
+ ---+---+---
+  X | X | O
+ ---+---+---
+    |   | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+E
+    |   | X
+ ---+---+---
+  X | X | O
+ ---+---+---
+    |   | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+Z
+    |   | X
+ ---+---+---
+  X | X | O
+ ---+---+---
+  O |   | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+X
+    |   | X
+ ---+---+---
+  X | X | O
+ ---+---+---
+  O | X | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+W
+    | O | X
+ ---+---+---
+  X | X | O
+ ---+---+---
+  O | X | O
+Where would you like to place your marker?
+Q | W | E
+--|---|--
+A | S | D
+--|---|--
+Z | X | C
+Q
+  X | O | X
+ ---+---+---
+  X | X | O
+ ---+---+---
+  O | X | O

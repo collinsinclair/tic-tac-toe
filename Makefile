@@ -1,23 +1,13 @@
-OBJS	= main.o tictactoe.o
-SOURCE	= main.cpp tictactoe.cpp
-HEADER	= tictactoe.h
-OUT	= tictactoe
-CC	 = g++
-FLAGS	 = -g -c -Wall
-LFLAGS	 =
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall 
 
-all: $(OBJS)
-	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
-
-main.o: main.cpp
-	$(CC) $(FLAGS) main.cpp -std=c++14
-
-tictactoe.o: tictactoe.cpp
-	$(CC) $(FLAGS) tictactoe.cpp -std=c++14
-
+all: main
 
 clean:
-	rm -f $(OBJS) $(OUT)
+	rm *.o main
 
-run: $(OUT)
-	./$(OUT)
+main: TicTacToe.o
+	$(CXX) $(CXXFLAGS) main.cpp TicTacToe.o -o main
+
+TicTacToe.o:
+	$(CXX) $(CXXFLAGS) -c TicTacToe.cpp
