@@ -102,4 +102,54 @@ void TicTacToe::DisplayBoard() const {
   std::cout << "  " << NumToChar(ll_) << " | " << NumToChar(lm_) << " | " << NumToChar(lr_) << std::endl;
 }
 
-
+/**
+ * Takes a input location and player integer and updates the value of that
+ * square with the player's integer.
+ * 
+ * @param grid location (int)
+ * @param player integer 
+ */
+void TicTacToe::PlaceMarker(int loc , int player){
+  
+  switch(loc){
+    case 0:{
+      ul_ = player;
+      break;
+    }
+    case 1:{
+      um_ = player;
+      break;
+    }
+    case 2:{
+      ur_ = player;
+      break;
+    }
+    case 3:{
+      ml_ = player;
+      break;
+    }
+    case 4:{
+      mm_ = player;
+      break;
+    }
+    case 5:{
+      mr_ = player;
+      break;
+    }
+    case 6:{
+      ll_ = player;
+      break;
+    }
+    case 7:{
+      lm_ = player;
+      break;
+    }
+    case 8:{
+      lr_ = player;
+      break;
+    }
+    default:{
+      std::cout << "Incorrect location parameter" << std::endl;
+    }
+  }
+}

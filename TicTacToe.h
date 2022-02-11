@@ -12,7 +12,7 @@ class TicTacToe {
   static int CharToNum(char choice);
   static int GetPlayerChoice();
   void DisplayBoard() const;
-
+  void PlaceMarker(int, int);
  private:
   /* these nine data members represent the nine squares on a TTT board
    * u = upper, m = middle, l = lower/left, r = right
