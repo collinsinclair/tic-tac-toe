@@ -19,3 +19,19 @@ void TicTacToe::CreateBoard() {
   lm_ = 0;
   lr_ = 0;
 }
+char TicTacToe::NumToChar(int num) {
+  switch (num) {
+    case -1: return 'X';
+    case 0: return ' ';
+    case 1: return 'O';
+    default: return 'E'; // E for error - this function should not get any other values
+  }
+}
+void TicTacToe::DisplayBoard() const {
+  std::cout << "  " << NumToChar(ul_) << " | " << NumToChar(um_) << " | " << NumToChar(ur_) << std::endl;
+  std::cout << "  " << "---+---+---" << std::endl;
+  std::cout << "  " << NumToChar(ml_) << " | " << NumToChar(mm_) << " | " << NumToChar(mr_) << std::endl;
+  std::cout << "  " << "---+---+---" << std::endl;
+  std::cout << "  " << NumToChar(ll_) << " | " << NumToChar(lm_) << " | " << NumToChar(lr_) << std::endl;
+}
+
