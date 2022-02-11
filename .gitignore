@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Collin's Stuff
+.idea
+.vscode
+*.DS_Store*
