@@ -20,6 +20,12 @@ void TicTacToe::CreateBoard() {
   lm_ = 0;
   lr_ = 0;
 }
+
+/**
+ * turns the numerical representation of a square into a character to be displayed
+ * @param num the numerical representation of the square to be converted
+ * @return the character corresponding to the number
+ */
 char TicTacToe::NumToChar(int num) {
   switch (num) {
     case -1: return 'X';
@@ -28,11 +34,72 @@ char TicTacToe::NumToChar(int num) {
     default: return 'E'; // E for error - this function should not get any other values
   }
 }
+
+/**
+ * turns a character representation of a square into a character
+ * @param choice the character representation of the square to be converted
+ * @return the number corresponding to the character
+ */
+int TicTacToe::CharToNum(char choice) {
+  switch (choice) {
+    case 'X': return -1;
+    case 'O': return 1;
+    default: return 2; // this is an error
+  }
+}
+
+/**
+ * Prompts the player to enter the square they'd like to play on
+ * @return a number 0-8 corresponding to the square they'd like to play on
+ * where 0 is the upper left corner, 1 is upper middle, ... , 8 is the lower right corner
+ */
+int TicTacToe::GetPlayerChoice() {
+  char choice;
+  std::cout << "Where would you like to place your marker?" << std::endl;
+  std::cout << "Q | W | E" << std::endl;
+  std::cout << "--|---|--" << std::endl;
+  std::cout << "A | S | D" << std::endl;
+  std::cout << "--|---|--" << std::endl;
+  std::cout << "Z | X | C" << std::endl;
+  std::cin >> choice;
+
+  // validate user input
+  while (choice != 'Q' &&
+      choice != 'W' &&
+      choice != 'E' &&
+      choice != 'A' &&
+      choice != 'S' &&
+      choice != 'D' &&
+      choice != 'Z' &&
+      choice != 'X'
+      && choice != 'C') {
+    std::cout << "Invalid choice. Please try again." << std::endl;
+    std::cin >> choice;
+  }
+
+  switch (choice) {
+    case 'Q': return 0;
+    case 'W': return 1;
+    case 'E': return 2;
+    case 'A': return 3;
+    case 'S': return 4;
+    case 'D': return 5;
+    case 'Z': return 6;
+    case 'X': return 7;
+    case 'C': return 8;
+    default: return -1; // error
+  }
+}
+
+/**
+ * displays the current game board
+ */
 void TicTacToe::DisplayBoard() const {
   std::cout << "  " << NumToChar(ul_) << " | " << NumToChar(um_) << " | " << NumToChar(ur_) << std::endl;
-  std::cout << "  " << "---+---+---" << std::endl;
+  std::cout << " " << "---+---+---" << std::endl;
   std::cout << "  " << NumToChar(ml_) << " | " << NumToChar(mm_) << " | " << NumToChar(mr_) << std::endl;
-  std::cout << "  " << "---+---+---" << std::endl;
+  std::cout << " " << "---+---+---" << std::endl;
   std::cout << "  " << NumToChar(ll_) << " | " << NumToChar(lm_) << " | " << NumToChar(lr_) << std::endl;
 }
+
 
