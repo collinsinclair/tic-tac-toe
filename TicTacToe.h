@@ -7,6 +7,7 @@ class TicTacToe {
  public:
   TicTacToe();
   void CreateBoard();
+  void DisplayBoard();
  private:
   /* these nine data members represent the nine squares on a TTT board
    * u = upper, m = middle, l = lower/left, r = right
