@@ -1,3 +1,10 @@
+/**
+Authors: Brian Reagan and Collin Sinclair
+Programming Exercise 4
+This is a simple tic-tac-toe game that 2 player's
+can run on a terminal.
+Just takes the path to the main file to run
+*/
 #include "TicTacToe.h"
 
 int main() {
@@ -8,7 +15,7 @@ int main() {
   // player 1 = false ; player 2 = true
   int input;
 
-  for (int turn = 1 ; turn <= 9 ; turn++){
+  for (int turn = 1 ; turn <= 9 ; turn++){ // run for 9 turns
     input = g.GetPlayerChoice();
 
     if(!player){
