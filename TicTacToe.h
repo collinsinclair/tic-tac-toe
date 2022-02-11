@@ -9,6 +9,8 @@ class TicTacToe {
   TicTacToe();
   void CreateBoard();
   static char NumToChar(int num);
+  static int CharToNum(char choice);
+  static int GetPlayerChoice();
   void DisplayBoard() const;
   void PlaceMarker(int, int);
  private:
