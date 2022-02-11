@@ -11,3 +11,5 @@ To run the program, simply type `make && ./main` into the command line, press en
 screen. To clean up the files that the game produces, run `make clean`.
 
 Have fun!
+
+Note: I (Collin) accidentally committed a change to main instead of to my branch, so the commit/PR/merge flow is very slightly incorrect.
