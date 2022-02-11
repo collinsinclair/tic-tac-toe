@@ -7,7 +7,7 @@ This is a simple command-line-based Tic Tac Toe game. Two players alternate taki
 3-by-3 board. The program serves as a digital alternative to a physical board: it keeps track of where the players have
 placed their markers, but it is up to the players to play fairly and recognize a winner if there is one.
 
-To run the program, simply type `make && make run` into the command line, press enter, and follow the instructions on
+To run the program, simply type `make && ./main` into the command line, press enter, and follow the instructions on
 screen. To clean up the files that the game produces, run `make clean`.
 
 Have fun!
