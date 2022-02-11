@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Collin's Stuff
+.idea
+.vscode
+cmake-build-debug
+*.DS_Store*
